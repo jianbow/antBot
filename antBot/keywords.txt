@@ -1,0 +1,16 @@
+#####################################################################
+#	Datatypes (KEYWORD1)
+#####################################################################
+
+antBot	KEYWORD1
+
+#####################################################################
+#	Methods and Functions (KEYWORD2)
+#####################################################################
+
+begin				KEYWORD2
+stop				KEYWORD2
+fullForward			KEYWORD2
+fullReverse			KEYWORD2
+forwardSpeed		KEYWORD2
+reverseSpeed		KEYWORD2
