@@ -20,8 +20,7 @@ private:
 public:
 	LineFollower lineFollower;
 	Ultrasonic ultrasonic;
-	antBot(boolean reverse);
-	void begin();
+	AntBot(boolean reverse);
 	void stop();
 	void fullForward();
 	void fullReverse();
