@@ -1,7 +1,9 @@
-#ifndef antBot_h
-#define	antBot_h
+#ifndef AntBot_h
+#define	AntBot_h
 
 #include <Arduino.h>
+#include <LineFollower.h>
+#include <Ultrasonic.h>
 #include <Servo.h>
 
 #define motorPWMR 4
@@ -9,16 +11,15 @@
 #define motorPWML 7
 #define motorDL	6
 #define buzzer 8
-/*
-#define FORWARD       2000
-#define HOLD_OFF_TIME 8
-*/
-class antBot
+
+class AntBot
 {
 private:
 	boolean isReversed;
 	
 public:
+	LineFollower lineFollower;
+	Ultrasonic ultrasonic;
 	antBot(boolean reverse);
 	void begin();
 	void stop();
@@ -26,12 +27,7 @@ public:
 	void fullReverse();
 	void forwardSpeed(int speed);
 	void reverseSpeed(int speed);
-	/*
-	void rampToSpeed(int speed);
-	void moveAtSpeed(int speed);
-	void forwardAtSpeed(int speed);
-	void reverseAtSpeed(int speed);
-	*/
+	
 };
 
 #endif
