@@ -18,14 +18,22 @@ private:
 	boolean isReversed;
 	
 public:
+	//sensors
 	LineFollower lineFollower;
 	Ultrasonic ultrasonic;
+
+	//implemented
 	AntBot(boolean reverse);
 	void stop();
 	void fullForward();
 	void fullReverse();
-	void forwardSpeed(int speed);
-	void reverseSpeed(int speed);
+	void forwardSpeed(int);
+	void reverseSpeed(int);
+
+	//to be implemented
+	void turnRight(int);
+	void turnLeft(int);
+	void setMotorSpeed(String, int);
 	
 };
 

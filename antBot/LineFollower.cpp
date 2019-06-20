@@ -5,7 +5,7 @@ LineFollower::LineFollower() {
 }
 
 LineFollower::LineFollower(String port) {
-	
+	setPort(port);
 }
 
 void LineFollower::setPort(String port) {
@@ -21,10 +21,26 @@ void LineFollower::setPort(String port) {
 }
 		
 
-boolean LineFollower::getRight(){
+boolean LineFollower::getRight() {
 	return digitalRead(rightPin);
 }
 
-boolean LineFollower::getLeft(){
+boolean LineFollower::getLeft() {
 	return digitalRead(leftPin);
+}
+
+boolean LineFollower::onLine() {
+
+}
+
+boolean LineFollower::offLine() {
+
+}
+
+boolean LineFollower::rightOfLine() {
+
+}
+
+boolean LineFollower::leftOfLine() {
+
 }

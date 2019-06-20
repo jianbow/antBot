@@ -5,6 +5,10 @@ Ultrasonic::Ultrasonic() {
 	setPort("A");
 }
 
+Ultrasonic::Ultrasonic(String port) {
+	setPort(port);
+}
+
 void Ultrasonic::setPort(String port) {
 	if(port.equals("A")){
 		pingPin = 12;

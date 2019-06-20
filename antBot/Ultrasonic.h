@@ -13,6 +13,7 @@ private:
 	
 public:
 	Ultrasonic();
+	Ultrasonic(String);
 	void setPort(String);
 	long measure();
 	long getDistCm();
